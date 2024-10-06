@@ -1,4 +1,4 @@
-# X Clone Application (Twitter Clone)
+# Twitter/X Clone Application (Twitter Clone)
 
 ## Overview
 This project is a clone of the X (formerly Twitter) web application. It includes user authentication, posting, and follows functionality, as well as a feed where users can view and interact with posts.
@@ -13,11 +13,12 @@ This project is a clone of the X (formerly Twitter) web application. It includes
 ## Screenshots:
 1. **Signin/Login Page**
    - This is the Signin/login interface where users can enter their credentials to sign in or navigate to the sign-up page if they don’t have an account.<br/><br/>
-    ![](https://github.com/user-attachments/assets/ace912c3-c2dc-4d92-82fc-6f2fd2624909)<br/><br/>
 
    ![](https://github.com/user-attachments/assets/1e0b1cd8-3025-4143-abc6-d2598d1aae0d)<br/><br/>
 
-2. **Home Feed**
+   ![](https://github.com/user-attachments/assets/ace912c3-c2dc-4d92-82fc-6f2fd2624909)<br/><br/>
+
+3. **Home Feed**
    - After logging in, users are redirected to the home feed where they can view posts, like them, and follow other users.<br/><br/>
    ![](https://github.com/user-attachments/assets/1ca85351-7f76-49b1-9512-9ae5a9a6706d)<br/><br/>
    ![](https://github.com/user-attachments/assets/09bbfa75-e7a2-49c4-8776-cfb1754e6882)<br/><br/>
