@@ -1,7 +1,7 @@
 import path from "path";
 import express from "express";
 import dotenv from "dotenv";
-import connectMongoDB from "./db/connectMongoDb.js";
+import connectMongoDB from "./db/connectMongoDB.js";
 import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from "cloudinary";
 
