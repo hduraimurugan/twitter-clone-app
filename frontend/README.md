@@ -8,20 +8,19 @@ This project is a clone of the X (formerly Twitter) web application. It includes
 - **Posts**: Users can create, like, and view posts.<br/>
 - **Follow System**: Users can follow/unfollow other users.<br/>
 - **Responsive Design**: The application is optimized for desktop and mobile devices.<br/>
-![](https://github.com/user-attachments/assets/3a8e926a-33da-439f-8ba8-2ba1669b53fa) ![](https://github.com/user-attachments/assets/12e7bf17-cd3a-456a-a734-c9490151a701)<br/><br/>
 - **Real-time Updates**: Posts and interactions are displayed dynamically.
 
 ## Screenshots:
 1. **Signin/Login Page**
-   - This is the Signin/login interface where users can enter their credentials to sign in or navigate to the sign-up page if they don’t have an account.
-![](https://github.com/user-attachments/assets/ace912c3-c2dc-4d92-82fc-6f2fd2624909)<br/><br/>
+   - This is the Signin/login interface where users can enter their credentials to sign in or navigate to the sign-up page if they don’t have an account.<br/><br/>
+    ![](https://github.com/user-attachments/assets/ace912c3-c2dc-4d92-82fc-6f2fd2624909)<br/><br/>
 
-![](https://github.com/user-attachments/assets/1e0b1cd8-3025-4143-abc6-d2598d1aae0d)<br/><br/>
+   ![](https://github.com/user-attachments/assets/1e0b1cd8-3025-4143-abc6-d2598d1aae0d)<br/><br/>
 
 2. **Home Feed**
    - After logging in, users are redirected to the home feed where they can view posts, like them, and follow other users.<br/><br/>
-   ![](https://github.com/user-attachments/assets/1ca85351-7f76-49b1-9512-9ae5a9a6706d)<br/>
-   ![](https://github.com/user-attachments/assets/09bbfa75-e7a2-49c4-8776-cfb1754e6882)<br/>
+   ![](https://github.com/user-attachments/assets/1ca85351-7f76-49b1-9512-9ae5a9a6706d)<br/><br/>
+   ![](https://github.com/user-attachments/assets/09bbfa75-e7a2-49c4-8776-cfb1754e6882)<br/><br/>
 
 ## Technologies Used:
 - **React**: For building the frontend of the application.
