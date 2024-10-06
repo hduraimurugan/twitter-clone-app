@@ -142,15 +142,22 @@ const Post = ({ post }) => {
 					</Link>
 				</div>
 				<div className='flex flex-col flex-1'>
-					<div className='flex gap-2 items-center'>
+					<div className='flex gap-1 items-center'>
 						<Link to={`/profile/${postOwner.username}`} className='font-bold flex items-center gap-1'>
 							{postOwner.fullName} {postOwner.isVerified && <MdVerified className='inline text-blue-400 text-xl' />}
 						</Link>
 						<span className='text-gray-700 flex gap-1 text-sm'>
-							<Link to={`/profile/${postOwner.username}`}>@{postOwner.username}</Link>
-							<span>·</span>
-							<span>{formattedDate}</span>
+							<Link to={`/profile/${postOwner.username}`}>
+								{formattedDate === 'Just now' ? `@${postOwner.username.slice(0, 5)}` : `@${postOwner.username}`}
+							</Link>
+
+							<>
+								<span>·</span>
+								<span>{formattedDate}</span>
+							</>
+
 						</span>
+						
 						{isMyPost && (
 							<span className='flex justify-end flex-1'>
 								{!isDeleting && (
