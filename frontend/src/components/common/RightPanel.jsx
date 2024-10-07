@@ -5,6 +5,7 @@ import useFollow from "../../hooks/useFollow";
 
 import RightPanelSkeleton from "../skeletons/RightPanelSkeleton";
 import LoadingSpinner from "./LoadingSpinner";
+import { MdVerified } from "react-icons/md";
 
 const RightPanel = () => {
 	const { data: suggestedUsers, isLoading } = useQuery({
@@ -57,8 +58,8 @@ const RightPanel = () => {
 										</div>
 									</div>
 									<div className='flex flex-col'>
-										<span className='font-semibold tracking-tight truncate w-28'>
-											{user.fullName}
+										<span className='font-semibold flex items-center gap-1 tracking-tight truncate w-28'>
+											{user.fullName}{user.isVerified && <MdVerified className='inline text-blue-400 text-xl' />}
 										</span>
 										<span className='text-sm text-slate-500'>@{user.username}</span>
 									</div>

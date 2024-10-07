@@ -142,13 +142,14 @@ const Post = ({ post }) => {
 					</Link>
 				</div>
 				<div className='flex flex-col flex-1'>
-					<div className='flex gap-1 items-center'>
+					<div className='flex gap-1 tracking-tight truncate items-center'>
 						<Link to={`/profile/${postOwner.username}`} className='font-bold flex items-center gap-1'>
 							{postOwner.fullName} {postOwner.isVerified && <MdVerified className='inline text-blue-400 text-xl' />}
 						</Link>
 						<span className='text-gray-700 flex gap-1 text-sm'>
 							<Link to={`/profile/${postOwner.username}`}>
-								{formattedDate === 'Just now' ? `@${postOwner.username.slice(0, 5)}` : `@${postOwner.username}`}
+								@{postOwner.username}
+								{/* {formattedDate === 'Just now' ? `@${postOwner.username.slice(0, 7)}` : `@${postOwner.username}`} */}
 							</Link>
 
 							<>
@@ -157,7 +158,7 @@ const Post = ({ post }) => {
 							</>
 
 						</span>
-						
+
 						{isMyPost && (
 							<span className='flex justify-end flex-1'>
 								{!isDeleting && (
@@ -214,10 +215,14 @@ const Post = ({ post }) => {
 												</div>
 												<div className='flex flex-col'>
 													<div className='flex items-center gap-1'>
-														<Link to={`/profile/${comment.user.username}`} className="flex gap-1 items-center">
-															<span className='font-bold'>{comment.user.fullName}</span>
+														<Link to={`/profile/${comment.user.username}`} className="flex gap-1 items-center tracking-tight truncate">
+															<span className='font-bold flex items-center gap-1'>
+																{comment.user.fullName}
+																{comment.user.isVerified && <MdVerified className='inline text-blue-400 text-xl' />}
+															</span>
 															<span className='text-gray-700 text-sm'>
 																@{comment.user.username}
+
 															</span>
 														</Link>
 													</div>
