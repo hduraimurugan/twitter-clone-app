@@ -1,5 +1,5 @@
 import { generateTokenAndSetCookie } from "../lib/utils/generateToken.js";
-import { sendDiscordNotificationLogin, sendDiscordNotificationLogout, sendDiscordNotificationSignup } from "../middleware/sendMessages.js";
+import { sendDiscordNotificationLogin, sendDiscordNotificationSignup } from "../middleware/sendMessages.js";
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 
@@ -109,8 +109,6 @@ export const login = async (req, res) => {
 
 export const logout = async (req, res) => {
     try {
-        const { username } = req.body;
-        sendDiscordNotificationLogout(username);
         res.cookie("jwt", "", { maxAge: 0 });
         res.status(200).json({ message: "Logged out successfully" });
     }
