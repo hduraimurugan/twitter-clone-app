@@ -81,6 +81,16 @@ const ProfilePage = () => {
 		refetch();
 	}, [username, refetch]);
 
+	useEffect(() => {
+        if (!user) return;
+        document.title = user?.fullName + (user?.bio ? `  |  ${user.bio}` : '');
+
+        return function () {
+            document.title = "Twitter Clone";
+            // Clean up effect
+        };
+    }, [user])
+
 	return (
 		<>
 			<div className='flex-[4_4_0]  border-r border-gray-700 min-h-screen '>
