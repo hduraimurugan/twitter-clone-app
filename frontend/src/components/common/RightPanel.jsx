@@ -6,6 +6,7 @@ import useFollow from "../../hooks/useFollow";
 import RightPanelSkeleton from "../skeletons/RightPanelSkeleton";
 import LoadingSpinner from "./LoadingSpinner";
 import { MdVerified } from "react-icons/md";
+import SearchInput from "./SearchInput";
 
 const RightPanel = () => {
 	const { data: suggestedUsers, isLoading } = useQuery({
@@ -30,6 +31,9 @@ const RightPanel = () => {
 
 	return (
 		<div className='hidden lg:block my-4 mx-2'>
+
+			<SearchInput />
+
 			<div className='p-4 rounded-lg sticky top-2'>
 				<p className='font-bold mb-5'>Who to follow</p>
 				<div className='flex flex-col gap-5'>
